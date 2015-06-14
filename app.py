@@ -36,9 +36,6 @@ def home(path):
         db.delete(path) #remove old keys
         db.hmset(path, event)
         db.expire(path, ttl)
-        if "value" in event: #maybe remove
-            db.publish(path, event["value"])
-            db.publish('interesting', event["value"])
         return json.dumps(event), 201
 
     if not db.exists(path):
