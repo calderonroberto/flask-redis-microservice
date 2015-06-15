@@ -1,2 +1,4 @@
 *.pyc
 .venv
+thing.json
+curl.txt
