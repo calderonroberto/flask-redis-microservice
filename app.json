@@ -1,0 +1,7 @@
+{
+  "name": "Prototyping fun with Flask and Redis",
+  "description": "A Heroku button to accompany the post at: http://robertocalderon.ca/blog/flask-and-redis-is-fun/",
+  "repository": "https://github.com/itamarhaber/flask-redis-microservice",
+  "logo": "http://robertocalderon.ca/blog/wp-content/uploads/2015/06/drawing.jpg",
+  "keywords": ["python", "flask", "redis"]
+}
