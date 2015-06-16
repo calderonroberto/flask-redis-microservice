@@ -10,11 +10,17 @@ import flask
 import redis
 import time
 import json
+import os
 from flask import Response, stream_with_context
 
 app = Flask(__name__)
 app.debug = True
-db = redis.Redis('localhost') #connect to server
+
+url = os.getenv('REDISCLOUD_URL')
+if url:
+    db = redis.Redis.from_url(url)
+else: 
+    db = redis.Redis('localhost') #connect to server
 
 ttl = 31104000 #one year
 
@@ -31,6 +37,7 @@ def home(path):
 
     if (request.method == 'PUT'):
         event = request.json
+        print(event)
         event['last_updated'] = int(time.time())
         event['ttl'] = ttl
         db.delete(path) #remove old keys
