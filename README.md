@@ -1,8 +1,23 @@
 # An example microservice using Flask and Redis.
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+This microservice uses Flask and Redis to store keys.
 
-This is
+Try it:
+
+```
+curl -H "Content-Type: application/json" -X PUT -d '{"value":123}' https://flask-redis.herokuapp.com/mysensor
+
+curl https://flask-redis.herokuapp.com/mysensor
+```
+
+And another instance (by [https://github.com/itamarhaber/flask-redis-microservice](itarmarhaber)):
+[https://github.com/itamarhaber/flask-redis-microservice](https://github.com/itamarhaber/flask-redis-microservice)
+
+```
+curl -H "Content-Type: application/json" -X PUT -d '{"value":123}' https://flask-redis-microservice.herokuapp.com/mysensor
+
+curl https://flask-redis-microservice.herokuapp.com/mysensor
+```
 
 ## Dependencies:
 
@@ -29,4 +44,6 @@ To run the application:
 python app.py
 ```
 
+## Other Contributors:
 
+[https://github.com/itamarhaber](itarmarhaber)
