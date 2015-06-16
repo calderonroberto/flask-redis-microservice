@@ -10,7 +10,9 @@ curl -H "Content-Type: application/json" -X PUT -d '{"value":123}' https://flask
 curl https://flask-redis.herokuapp.com/mysensor
 ```
 
-And another instance (by [https://github.com/itamarhaber/flask-redis-microservice](itarmarhaber)):
+And another instance (by [itarmarhaber](https://github.com/itamarhaber)
+):
+
 [https://github.com/itamarhaber/flask-redis-microservice](https://github.com/itamarhaber/flask-redis-microservice)
 
 ```
@@ -46,4 +48,4 @@ python app.py
 
 ## Other Contributors:
 
-[https://github.com/itamarhaber](itarmarhaber)
+[itarmarhaber](https://github.com/itamarhaber)
