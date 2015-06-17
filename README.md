@@ -2,8 +2,11 @@
 
 This microservice uses Flask and Redis to store keys.
 
-Try it:
+## Deploy your own:
 
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+
+## Try it:
 
 ```
 curl -H "Content-Type: application/json" -X PUT -d '{"value":123}' https://flask-redis.herokuapp.com/mysensor
@@ -21,10 +24,6 @@ curl -H "Content-Type: application/json" -X PUT -d '{"value":123}' https://flask
 
 curl https://flask-redis-microservice.herokuapp.com/mysensor
 ```
-
-Deploy your own:
-
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Dependencies:
 
