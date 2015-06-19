@@ -19,7 +19,7 @@ app.debug = True
 url = os.getenv('REDISCLOUD_URL')
 if url:
     db = redis.Redis.from_url(url)
-else: 
+else:
     db = redis.Redis('localhost') #connect to server
 
 ttl = 31104000 #one year
@@ -43,7 +43,8 @@ def home(path):
         db.delete(path) #remove old keys
         db.hmset(path, event)
         db.expire(path, ttl)
-        return json.dumps(event), 201
+        return flask.jsonify(event), 201
+
 
     if not db.exists(path):
         return "Error: thing doesn't exist"
@@ -52,7 +53,7 @@ def home(path):
     event["ttl"] = db.ttl(path)
     #cast integers accordingly, nested arrays, dicts not supported for now  :(
     dict_with_ints = dict((k,int(v) if isInt(v) else v) for k,v in event.iteritems())
-    return json.dumps(dict_with_ints), 200
+    return flask.jsonify(dict_with_ints), 200
 
 
 if __name__ == "__main__":
