@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/calderonroberto/flask-redis-microservice.svg?branch=master)](https://travis-ci.org/calderonroberto/flask-redis-microservice)
-
-[![Code Climate](https://codeclimate.com/github/calderonroberto/flask-redis-microservice/badges/gpa.svg)](https://codeclimate.com/github/calderonroberto/flask-redis-microservice)
+[![Build Status](https://travis-ci.org/calderonroberto/flask-redis-microservice.svg?branch=master)](https://travis-ci.org/calderonroberto/flask-redis-microservice) [![Code Climate](https://codeclimate.com/github/calderonroberto/flask-redis-microservice/badges/gpa.svg)](https://codeclimate.com/github/calderonroberto/flask-redis-microservice)
 
 # An example microservice using Flask and Redis.
 
