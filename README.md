@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/calderonroberto/flask-redis-microservice.svg?branch=master)](https://travis-ci.org/calderonroberto/flask-redis-microservice)
+
 # An example microservice using Flask and Redis.
 
 This microservice uses Flask and Redis to store keys.
@@ -27,7 +29,7 @@ curl https://flask-redis-microservice.herokuapp.com/mysensor
 
 ## Dependencies:
 
-* Python >2.7
+* Python >2.7 (Sorry boys not Python3 compatible)
 * Flask
 * Redis
 
